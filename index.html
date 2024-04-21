@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Validacion</title>
+    <link rel="stylesheet" href="./css/formulario.css">
+</head>
+
+<body>
+    <div class="contenedor">
+        <form action="" id="form" onsubmit="return validateform()">
+            <h1>Registro</h1>
+            <div class="input-control">
+                <label for="usarname">Usuario</label>
+                <input type="text" id="usarname" name="usarname">
+                <div class="error" id="name-error"></div>
+            </div>
+            <div class="input-control">
+                <label for="email">Email</label>
+                <input type="text" id="email" name="email">
+                <div class="error" id="email-error"></div>
+            </div>
+            <div class="input-control">
+                <label for="passwork">Contraseña</label>
+                <input type="password" id="password" name="password">
+                <div class="error" id="password-error"></div>
+            </div>
+            <div class="input-control">
+                <label for="usarname">Confirmar Contraseña</label>
+                <input type="password" id="password2" name="password2">
+                <div class="error" id="password2-error"></div>
+            </div>
+            <button type="submit">Iniciar Sesion</button>
+        </form>
+    </div>
+    <script src="./formularioscript/scriptformulario.js"></script>
+</body>
+
+</html>
